@@ -5,3 +5,7 @@
     background-color: rgb(180, 110, 110);
     padding-right: 50px;
   }
+
+  .item.active {
+    color:rgb(216, 0, 126)
+  }
