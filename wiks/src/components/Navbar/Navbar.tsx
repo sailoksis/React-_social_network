@@ -11,10 +11,10 @@ return <nav className={classes.nav}>
   <a>Messages</a>
 </div>
 <div className="item">
-  <a>News</a>
+  <a href="/dialogs">Dialogs</a>
 </div>
 <div className="item">
-  <a>Music</a>
+  <a href="/content">content</a>
 </div>
 <div className="item">
   <a>Settings</a>
