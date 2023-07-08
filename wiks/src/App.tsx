@@ -18,9 +18,9 @@ function App() {
       <Navbar />
       <div className="app-wrapper-content">
         <Routes>
-        <Route path="/content" element={<Content />}/>
-        <Route path="/dialogs" element={<Dialogs />}/>
-        <Route path="/tables" element={<Table/>}/>
+        <Route path="/content/*" element={<Content />}/>
+        <Route path="/dialogs/*" element={<Dialogs />}/>
+        <Route path="/tables/*" element={<Table/>}/>
         </Routes>
       
       </div>
