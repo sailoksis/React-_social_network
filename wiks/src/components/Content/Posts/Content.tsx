@@ -3,6 +3,11 @@ import classes from "./Content.module.css";
 import Post from "./Posts/Post";
 
 const Content = () => {
+  const postData = [
+    {id: 1, message: 'Hello', likesCount: 1},
+    {id: 2, message: 'Hi bro', likesCount: 30}
+   ]
+
   return (
     <div>
       <div>
@@ -17,9 +22,9 @@ const Content = () => {
         New posts
       </div>
       <div className={classes.posts}>
-    <Post message = "Hello" likesCount = '0'/>
-    <Post message = "Hi bro" likesCount = '22'/>
-    <Post/>
+    <Post message = {postData[0].message} likesCount = {postData[0].likesCount}/>
+    <Post message = {postData[1].message} likesCount = {postData[1].likesCount}/>
+  
       </div>
     
     </div>

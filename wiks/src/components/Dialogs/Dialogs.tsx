@@ -14,15 +14,20 @@ const Message = (props: any) => {
         }
 
 const Dialogs = () => {
+const dialogsData = [
+  {id: 1, name: 'Mihail'},
+  {id: 2, name: 'Anya'},
+  {id: 3, name: 'Dima'},
+  {id: 4, name: 'Oleg'},
+  {id: 5, name: 'Sega'},
+  {id: 6, name: 'Sim'},
+ ]
+
   return (
     <div className={styles.dialogs}>
       <div className={styles.dialogsItems}>
-        <DialogsItem name='Mihail' id = '1'/>
-        <DialogsItem name='Anya' id = '2'/>
-        <DialogsItem name='Dima' id = '3'/>
-        <DialogsItem name='Oleg' id = '4'/>
-        <DialogsItem name='Sega' id = '5'/>
-        <DialogsItem name='Sim' id = '6'/>
+        <DialogsItem name={dialogsData [0].name} id = {dialogsData [0].id}/>
+        <DialogsItem name={dialogsData [1].name} id = {dialogsData [1].id}/>
       </div>
 
       
