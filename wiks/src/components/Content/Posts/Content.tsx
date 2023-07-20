@@ -8,6 +8,7 @@ const Content = () => {
     {id: 2, message: 'Hi bro', likesCount: 30}
    ]
 
+ 
   return (
     <div>
       <div>
