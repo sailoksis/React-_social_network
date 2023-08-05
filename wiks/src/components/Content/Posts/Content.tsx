@@ -7,7 +7,12 @@ const Content = () => {
     {id: 1, message: 'Hello', likesCount: 1},
     {id: 2, message: 'Hi bro', likesCount: 30}
    ]
+  
+   const newPostElement = React.useRef<HTMLTextAreaElement>(null);
 
+   const addPost = () => {
+     let text: string | undefined = newPostElement.current?.value;
+   }
  
   return (
     <div>
@@ -16,7 +21,7 @@ const Content = () => {
       </div>
       <div>
         <textarea name="add" id="type"></textarea>
-        <button> Add post</button>
+        <button onClick={ addPost }> Add post</button>
         <button> Copy</button>
       </div>
       <div>
